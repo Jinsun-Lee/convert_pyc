@@ -5,7 +5,9 @@ git clone https://github.com/Jinsun-Lee/convert_pyc.git
 ```
 </br>
 
-# 동작
+--- 
+
+#### test.py 설명
 ```
 cd convert_pyc
 python3 test.py
@@ -17,7 +19,18 @@ python3 test.py
 5. 마이크로서비스 파일을 컴파일하고 바탕화면에 파이썬 파일을 옮겨줌
 6. 원래 경로에는 pyc 파일이 대신하게 됨
 
-</br>
+추가 설명: https://github.com/Jinsun-Lee/convert_pyc/wiki
 
-# 기타 설명
-https://github.com/Jinsun-Lee/convert_pyc/wiki
+--- 
+
+#### test2.py 설명
+```
+cd convert_pyc
+python3 test2.py
+```
+1. 명령어를 실행하면, `docs` 폴더 안의 `lib.cpython-310.pyc`을 기준으로 동작
+2. 함수를 수정하고 싶을 경우, `docs` 폴더 안의 `lib.py` 파일을 수정
+3. `test2.py`를 동작 → 수정이 반영되지 않음(기존의 동작과 동일)
+4. `lib.py` 파일 실행(pyc 파일이 갱신됨) → `test2.py`를 동작 → 수정이 반영됨(기존과 다른 동작)
+
+추가 설명: https://youtu.be/mgs05eKuSv0
